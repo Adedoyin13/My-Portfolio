@@ -1,0 +1,679 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    transition: all ease-in-out 300ms;
+}
+
+body a{
+    color: #3d3d3d; 
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 3rem;
+    height: 75px;
+    width: 100%;
+    border-bottom: 1px solid #ff9900;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoIcon {
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.logoIcon a{
+    color: #ff9900;
+}
+
+.logoName a{
+    font-family: 'playfair display';
+    font-size: 14px;
+}
+
+.navList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-right: 5rem;
+}
+
+.navList li a {
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+}
+
+.firstList a {
+    color: #db8400;
+}
+
+.navList li a:hover{
+    color: #ff9900;
+}
+
+.navList li a:active{
+    color: #db8400;
+}
+
+.mobileIcon{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.homeSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 5rem 2rem 5rem;
+    padding: 2rem;
+    height: 80vh;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 80%;
+}
+
+.heroPage {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.heroThings {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.heroText h1{
+    font-family: 'playfair display';
+    font-size: 36px;
+    color: #3d3d3d;
+    font-weight: 700;
+}
+
+.heroText .hi {
+    display: block;
+    font-size: 64px;
+    color: #ff9900;
+}
+
+.heroText .paragraph {
+    font-family: 'roboto';
+    font-size: 20px;
+    color: #3d3d3d;
+    font-weight: 400;
+}
+
+.heroText p {
+    font-family: 'roboto condensed';
+    font-size: 14px;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.heroIcons .iconList {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.heroIcons > .iconList > li > a {
+    color: #ff9900;
+    font-size: 25px;
+}
+
+.btnCon > div > a{
+    font-family: 'roboto condensed';
+    color: #ff9900;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 75px;
+}
+
+.btnCon > div > a:hover{
+    background-color: #ff9900;
+    color: #f5f5f5;
+    border: none;
+}
+
+.btnCon > div > a:active{
+    background-color: #db8400;
+    color: #f5f5f5;
+    border: none;
+}
+
+.heroImage {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.heroImage img {
+    width: 30rem;
+    cursor: pointer;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #3d3d3d;
+    margin-bottom: 5rem;
+}
+
+.aboutSection h2 {
+    font-family: 'playfair display';
+    font-size: 30px;
+}
+
+.aboutSection p {
+    font-family: 'roboto condensed';
+    font-size: 20px;
+    font-weight: 350;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projectSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.projectSectionCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #3d3d3d;
+    margin-bottom: 5rem;
+}
+
+.projetSection h2 {
+    font-family: 'playfair display';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.projectCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.projectText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.projectCon p {
+    font-family: 'roboto condensed';
+    font-size: 16px;
+    font-weight: 350;
+    width: 60%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projectText h3 {
+    font-family: 'playfair display';
+    font-size: 24px;
+    text-align: center;
+    color: #3d3d3d;
+    font-weight: 600;
+}
+
+.projectContainer img {
+    border-radius: 5px;
+    opacity: 0.8;
+    cursor: pointer;
+    width: 350px;
+    height: 200px;
+}
+
+.projectContainer img:hover {
+    opacity: 1;
+    box-shadow: 2px -2px 5px #333;
+}
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    margin-bottom: 5rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 25px;
+}
+
+.contact input, textarea {
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    padding-left: 5px ;
+    width: 500px;
+    height: 50px;
+}
+
+.contact input:active {
+    border: 2px solid #ff9900;
+}
+
+.msg textarea {
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: 'roboto condensed';
+}
+
+.contactMe h3 {
+    font-family: 'playfair display';
+    font-size: 30px;
+    text-align: center;
+}
+
+.contact label {
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contactMe form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contactMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn input{
+    font-family: 'roboto condensed';
+    color: #ff9900;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 75px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn input:hover{
+    background-color: #ff9900;
+    color: #f5f5f5;
+    border: none;
+}
+
+.btn input:active{
+    background-color: #db8400;
+    color: #f5f5f5;
+    border: none;
+}
+
+.btnProject {
+    display: none;
+}
+
+.footer {
+    background-color: #ffb84d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem 0;
+}
+
+.footer p {
+    font-family: 'roboto condensed';
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media screen and (max-width: 997px)  {
+    .heroSection {
+        margin: 0px 1rem 2rem 1rem;
+        padding: 0px 1rem;
+    }
+
+    .heroImage {
+        width: 20rem;
+    }
+
+    .projectCon p {
+        width: 80%;
+    }
+
+    .projectContainer {
+        gap: 2rem;
+    }
+
+    .contactText p {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .contactInfoCon li a {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 24px;
+        font-weight: 350;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .heroText h1 {
+        font-size: 24px;
+    }
+
+    .heroText .paragraph {
+        font-size: 18px;
+    }
+
+    .heroText .hi {
+        font-size: 50px;
+    }
+
+    .heroText p {
+        font-size: 14px;
+    }
+
+    /* .heroSection .heroImage {
+        width: 10rem;
+    } */
+
+    .aboutSection p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .projectContainer{
+        gap: 0px;
+    }
+
+    .projectContainer img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .heroText h1 {
+        font-size: 20px;
+    }
+
+    .heroText .hi {
+        font-size: 35px;
+    }
+
+    .heroText p {
+        font-size: 12px;
+    }
+
+    .heroText .paragraph {
+        font-size: 14px;
+    }
+
+    .heroImage {
+        width: 15rem;
+    }
+
+    .aboutSection p{
+        font-size: 16px;
+    }
+
+    .contactText p {
+        font-size: 18px;
+    }
+
+    .contactInfo li a {
+        font-size: 18px;
+    }
+
+    .footer p{
+        font-size: 18px;
+    }
+
+    .projectContainer{
+        gap: 0px;
+    }
+
+    
+    .projectContainer img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mobileIcon {
+        display: block;
+    }
+
+    .mobileIcon ion-icon:nth-child(2) {
+        display: none;
+    }
+
+    .navList {
+        display: none;
+    }
+
+    .projectCon:nth-child(2) {
+        margin-bottom: 3rem;
+    }
+
+    .projectContainer {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .projectContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectCon{
+        width: 90%;
+    }
+
+    .projectCon img{
+        height: 300px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .homeSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroSection {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .heroPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .heroText .hi {
+        font-size: 50px;
+    }
+
+    .heroText h1 {
+        font-size: 36px;
+    }
+
+    .heroText .paragraph {
+        font-size: 24px;
+    }
+
+    .heroText p {
+        font-size: 16px;
+    }
+
+    .heroImage {
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutSection p{
+        font-size: 24px;
+    }
+
+    .projetSection h2{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .projectContainer {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectSectionCon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btnProject {
+        display: block;
+    }
+
+    .projectContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectCon{
+        width: 90%;
+    }
+
+    .projectCon img{
+        height: 300px;
+        width: 450px;
+    }
+
+    .contact input, .contact textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .navBar {
+        padding: 20px 1rem;
+    }
+
+    .homeSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    .projectContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectCon{
+        width: 90%;
+    }
+
+    .projectCon img{
+        height: 200px;
+        width: 350px;
+    }
+}
+
+
+
+
+
+
+
