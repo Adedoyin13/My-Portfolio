@@ -22,7 +22,10 @@ body a{
     padding: 20px 3rem;
     height: 75px;
     width: 100%;
-    border-bottom: 1px solid #ff9900;
+    /* background-color: #f5f5f5; */
+    /* margin-bottom: 2rem; */
+    /* box-shadow: 5px 1px 2px #ff9900; */
+    /* border-bottom: 1px solid #ff9900; */
 }
 
 .logo{
@@ -76,7 +79,20 @@ body a{
     display: none;
 }
 
+.firstPage {
+    background-image: url(https://shorturl.at/wvoHW);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 75vh;
+}
+
 .homeSection{
+    /* background-image: url(https://shorturl.at/XcdBz);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,9 +102,9 @@ body a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 5rem 2rem 5rem;
+    /* margin: 1rem 5rem 2rem 5rem; */
     padding: 2rem;
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .heroText {
@@ -170,16 +186,16 @@ body a{
     border: none;
 }
 
-.heroImage {
-    display: flex;
+/* .heroImage {
+     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-}
+} 
 
 .heroImage img {
     width: 30rem;
     cursor: pointer;
-}
+}  */
 
 .aboutSection {
     display: flex;
@@ -189,6 +205,7 @@ body a{
     gap: 1.5rem;
     color: #3d3d3d;
     margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 .aboutSection h2 {
@@ -388,9 +405,9 @@ body a{
         padding: 0px 1rem;
     }
 
-    .heroImage {
+    /* .heroImage {
         width: 20rem;
-    }
+    } */
 
     .projectCon p {
         width: 80%;
@@ -467,9 +484,9 @@ body a{
         font-size: 14px;
     }
 
-    .heroImage {
+    /* .heroImage {
         width: 15rem;
-    }
+    } */
 
     .aboutSection p{
         font-size: 16px;
@@ -582,12 +599,12 @@ body a{
         font-size: 16px;
     }
 
-    .heroImage {
+    /* .heroImage {
         width: 25rem;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .heroIcons {
         display: flex;
