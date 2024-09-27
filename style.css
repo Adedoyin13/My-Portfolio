@@ -22,10 +22,6 @@ body a{
     padding: 20px 3rem;
     height: 75px;
     width: 100%;
-    /* background-color: #f5f5f5; */
-    /* margin-bottom: 2rem; */
-    /* box-shadow: 5px 1px 2px #ff9900; */
-    /* border-bottom: 1px solid #ff9900; */
 }
 
 .logo{
@@ -89,10 +85,6 @@ body a{
 }
 
 .homeSection{
-    /* background-image: url(https://shorturl.at/XcdBz);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,9 +94,7 @@ body a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 1rem 5rem 2rem 5rem; */
     padding: 2rem;
-    /* height: 80vh; */
 }
 
 .heroText {
@@ -185,17 +175,6 @@ body a{
     color: #f5f5f5;
     border: none;
 }
-
-/* .heroImage {
-     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-} 
-
-.heroImage img {
-    width: 30rem;
-    cursor: pointer;
-}  */
 
 .aboutSection {
     display: flex;
@@ -405,9 +384,10 @@ body a{
         padding: 0px 1rem;
     }
 
-    /* .heroImage {
-        width: 20rem;
-    } */
+    .firstPage {
+        width: 100vw;
+        height: 50vh;
+    }
 
     .projectCon p {
         width: 80%;
@@ -434,24 +414,20 @@ body a{
 
 @media screen and (max-width: 750px) {
     .heroText h1 {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     .heroText .paragraph {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .heroText .hi {
-        font-size: 50px;
+        font-size: 64px;
     }
 
     .heroText p {
-        font-size: 14px;
+        font-size: 18px;
     }
-
-    /* .heroSection .heroImage {
-        width: 10rem;
-    } */
 
     .aboutSection p {
         font-size: 18px;
@@ -469,31 +445,27 @@ body a{
 
 @media screen and (max-width: 650px) {
     .heroText h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .heroText .hi {
-        font-size: 35px;
+        font-size: 60px;
     }
 
     .heroText p {
-        font-size: 12px;
-    }
-
-    .heroText .paragraph {
-        font-size: 14px;
-    }
-
-    /* .heroImage {
-        width: 15rem;
-    } */
-
-    .aboutSection p{
         font-size: 16px;
     }
 
+    .heroText .paragraph {
+        font-size: 24px;
+    }
+
+    .aboutSection p{
+        font-size: 20px;
+    }
+
     .contactText p {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .contactInfo li a {
@@ -516,6 +488,10 @@ body a{
 }
 
 @media screen and (max-width: 600px) {
+    .heroText .paragraph {
+        font-size: 20px;
+    }
+
     .mobileIcon {
         display: block;
     }
@@ -557,32 +533,6 @@ body a{
 }
 
 @media screen and (max-width: 555px) {
-    .homeSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .heroSection {
-        flex-direction: column;
-        margin-bottom: 2rem;
-    }
-
-    .heroPage {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .heroText {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        margin-top: 2rem;
-    }
-
     .heroText .hi {
         font-size: 50px;
     }
@@ -592,28 +542,20 @@ body a{
     }
 
     .heroText .paragraph {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .heroText p {
-        font-size: 16px;
+        font-size: 18px;
     }
-
-    /* .heroImage {
-        width: 25rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
 
     .heroIcons {
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 
     .aboutSection p{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .projetSection h2{
@@ -664,14 +606,10 @@ body a{
         padding: 20px 1rem;
     }
 
-    .homeSection {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0px;
-        padding-right: 0px;
+    .heroText {
+        width: 100%;
     }
-
+    
     .projectContainer {
         display: flex;
         justify-content: center;
